@@ -179,8 +179,8 @@
 }
 
 .table__heading {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0;
+  padding: 0 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -189,6 +189,7 @@
 .table__text {
   margin-top: 20px;
   margin-bottom: 0;
+  padding: 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-style: normal;
@@ -279,11 +280,6 @@
   margin-top: 80px;
 }
 
-.table__heading {
-  margin: 0 0;
-  padding: 0 0;
-}
-
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
@@ -291,13 +287,7 @@
   z-index: 1;
 }
 
-.table__text {
-  margin: 0 0;
-  padding: 0 0;
-}
-
 .table__text_theme_dark {
-  padding-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-style: normal;
