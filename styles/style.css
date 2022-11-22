@@ -17,7 +17,7 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  z-index: -3;
+  z-index: 0;
 }
 
 /*ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -66,7 +66,7 @@
 }
 
 .header__main-illustration {
-  object-fit: fill;
+  object-fit: cover;
   position: absolute;
   height: 608px;
   width: 765px;
@@ -107,13 +107,9 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  right: 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  top: 0;
-  bottom: 0;
-  padding: 0 0;
 }
 
 .two-columns__paragraph {
@@ -201,23 +197,20 @@
   position: relative;
   padding-top: 100px;
   min-height: 890px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .feynman__title {
-  position: sticky;
   width: 648px;
   margin: 0 auto;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-  padding: 0;
   z-index: 1;
 }
 
 .feynman__subtitle {
-  position: sticky;
   margin: 0 auto;
   margin-top: 70px;
   text-align: center;
@@ -234,7 +227,7 @@
   bottom: 0;
   width: 867px;
   height: 637px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .feynman__link {
@@ -246,13 +239,14 @@
   text-decoration: none;
   color: #2f80ed;
   top: 50%;
+  z-index: 1;
 }
 
 .kaufman {
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
@@ -297,6 +291,7 @@
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
+  background-size: cover;
   min-width: 877px;
   min-height: 877px;
   top: 0;
@@ -322,7 +317,6 @@
 }
 
 .footer__column_content-copyright {
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
